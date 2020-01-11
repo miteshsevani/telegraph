@@ -1,0 +1,51 @@
+<div class="content-wrapper">
+  <div class="article-wrapper">
+    <header>
+      <h1 class="headline">{{{ article.post.title }}}</h1>
+      <div class="stand-first">{{{ article.post.standfirst }}}</div>
+      <div class="publish-date">{{{ article.post.date }}}</div>
+      <img class="hero" src='{{{ article.post.image }}}'>
+    </header>
+    <article>
+      {{{ article.post.body }}}
+    </article>
+    <div class="comments">
+      <div class="comments-header">
+        <div class="title">{{ comments.length }} Comments</div>
+        <div class="sort">
+          Sort:
+          <span class="like">Likes</span>
+          <span> | </span>
+          <span class="like">Newset</span>
+        </div>
+      </div>
+      {{#each comments}}
+      <div class="comment">
+        <div class="meta">
+          <span class="user">{{ name }}</span>
+          <span class="date">{{ date }}</span>
+          <span class="likes">{{ likes }} Likes</span>
+        </div>
+        <div class="comment-text">
+          {{ body }}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <aside class="side-rail">
+    <h3>More Stories</h3>
+    <div class="associated-articles">
+      {{#each posts}}
+      <div class="story">
+          <img src="{{ thumbnail }}">
+          <div class="content">
+            <h4 class="title">{{ title }}</h4>
+            <a href="#" class="title">Read more</a>
+          </div>
+      </div>
+      {{/each}}
+    </div>
+  </aside>
+</div>
