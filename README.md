@@ -1,2 +1,2 @@
 # telegraph
-Telegraph front end exercide
+Telegraph front end exercise
