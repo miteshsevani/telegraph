@@ -3,13 +3,14 @@
     <header>
       <h1 class="headline">{{{ article.post.title }}}</h1>
       <div class="stand-first">{{{ article.post.standfirst }}}</div>
-      <div class="publish-date">{{{ article.post.date }}}</div>
+      <div class="publish-date">{{{ postDate }}}</div>
       <img class="hero" src='{{{ article.post.image }}}'>
     </header>
     <article>
       {{{ article.post.body }}}
     </article>
-    <div class="comments">
+
+    <div class="comments-wrapper">
       <div class="comments-header">
         <div class="title">{{ comments.length }} Comments</div>
         <div class="sort">
@@ -18,6 +19,10 @@
           <span> | </span>
           <span class="like">Newset</span>
         </div>
+      </div>
+
+      <div class="comments">
+
       </div>
       {{#each comments}}
       <div class="comment">

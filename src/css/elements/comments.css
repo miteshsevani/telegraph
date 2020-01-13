@@ -40,7 +40,7 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .comments {
+  .comments-wrapper {
     margin-left: 100px;
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
