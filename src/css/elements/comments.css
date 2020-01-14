@@ -10,9 +10,11 @@
 .comments-header .comments-length::before {
   content: ' ';
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   background-image: url('images/comment-icon.svg');
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .comments-header .title {
@@ -24,9 +26,17 @@
   font-size: 14px;
 }
 
+.comments-header .sort [class^="sort-"] {
+  cursor: pointer;
+}
+
 .comment {
   padding: 16px 0;
   border-bottom: 1px solid #dddddd;
+}
+
+.comment:last-child {
+  border-bottom: none;
 }
 
 .comment .meta {
@@ -56,7 +66,6 @@
 @media only screen and (min-width: 1000px) {
   .comments-wrapper {
     margin-left: 100px;
-    border-top: 1px solid #dddddd;
-    border-bottom: 1px solid #dddddd;
+
   }
 }
