@@ -1,9 +1,8 @@
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: 'Times New Roman';
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  color: #2c2c2c;
+  font: 16px 'Roboto', sans-serif;
+  line-height: 24px;
+  color: #333333;
 }
 
 p {
@@ -14,6 +13,7 @@ a {
   color: #d10a11;
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
 }

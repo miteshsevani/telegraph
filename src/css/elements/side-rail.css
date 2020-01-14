@@ -3,15 +3,16 @@
   padding-bottom: 8px;
   margin-bottom: 8px;
   border-bottom: 1px solid #dddddd;
-  font-size: 1.7rem;
+  font-size: 19px;
   font-weight: bold;
 }
 
 .associated-articles {
   display: flex;
   flex-direction: column;
-  font-size: 1.1rem;
-  line-height: 1.3rem;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
 }
 
 .story {
@@ -19,14 +20,14 @@
   margin: 8px 0;
   padding-bottom: 16px;
   border-bottom: 1px solid #dddddd;
-  font-weight: bold;
 }
 
 .story img {
   margin-right: 16px;
   object-fit: contain;
   align-self: start;
-  max-width: 65px;
+  width: 65px;
+  height: 65px;
 }
 
 .story .content {

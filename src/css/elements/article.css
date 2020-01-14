@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1rem;
+  padding: 16px;
 }
 
 .article-wrapper {
@@ -20,7 +20,7 @@
   .content-wrapper {
     flex-direction: row;
     max-width: 1000px;
-    margin: 0 auto;
+    flex-wrap: wrap;
   }
   .article-wrapper {
     width: 65%;

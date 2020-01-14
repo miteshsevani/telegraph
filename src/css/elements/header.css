@@ -1,19 +1,22 @@
 
+
 .headline {
-  font-size: 2.4rem;
-  line-height: 2.6rem;
   margin-bottom: 16px;
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 600;
 }
 
 .stand-first {
-  font-size: 1.3rem;
-  line-height: 1.8rem;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 12px;
 }
 
 .publish-date {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  color: #999999;
+  font: 12px Arial, Helvetica, sans-serif;
+  line-height: 15px;
+  color: #767676;
   margin-bottom: 16px;
 }
 
@@ -22,12 +25,15 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  header {
+    width: 65%;
+  }
   header :not(.hero) {
     margin-left: 100px;
     margin-right: -100px;
   }
   .headline {
-    font-size: 3rem;
-    line-height: 3.2rem;
+    font-size: 35px;
+    line-height: 41px;
   }
 }

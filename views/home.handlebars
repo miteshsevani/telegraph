@@ -1,18 +1,17 @@
 <div class="content-wrapper">
+  <header>
+    <h1 class="headline">{{{ article.post.title }}}</h1>
+    <div class="stand-first">{{{ article.post.standfirst }}}</div>
+    <div class="publish-date">{{{ postDate }}}</div>
+  </header>
   <div class="article-wrapper">
-    <header>
-      <h1 class="headline">{{{ article.post.title }}}</h1>
-      <div class="stand-first">{{{ article.post.standfirst }}}</div>
-      <div class="publish-date">{{{ postDate }}}</div>
-      <img class="hero" src='{{{ article.post.image }}}'>
-    </header>
+    <img class="hero" src='{{{ article.post.image }}}'>
     <article>
       {{{ article.post.body }}}
     </article>
-
     <div class="comments-wrapper">
       <div class="comments-header">
-        <div class="title">{{ comments.length }} Comments</div>
+        <div class="title"><span class="comments-length"></span> Comments</div>
         <div class="sort">
           Sort:
           <span class="like">Likes</span>
@@ -20,25 +19,9 @@
           <span class="like">Newset</span>
         </div>
       </div>
-
-      <div class="comments">
-
-      </div>
-      {{#each comments}}
-      <div class="comment">
-        <div class="meta">
-          <span class="user">{{ name }}</span>
-          <span class="date">{{ date }}</span>
-          <span class="likes">{{ likes }} Likes</span>
-        </div>
-        <div class="comment-text">
-          {{ body }}
-        </div>
-      </div>
-      {{/each}}
+      <div class="comments"></div>
     </div>
   </div>
-
   <aside class="side-rail">
     <h3>More Stories</h3>
     <div class="associated-articles">

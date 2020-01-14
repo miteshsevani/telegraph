@@ -3,20 +3,29 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
-.comments-header .sort {
-  font-size: 1rem;
+.comments-header .comments-length::before {
+  content: ' ';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url('images/comment-icon.svg');
 }
 
 .comments-header .title {
-  font-size: 1.5rem;
+  font-size: 19px;
   font-weight: bold;
+}
+
+.comments-header .sort {
+  font-size: 14px;
 }
 
 .comment {
   padding: 16px 0;
-  border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
 
@@ -32,11 +41,16 @@
 }
 
 .comment .date {
-  color: #999999;
-  font: 1rem Arial, Helvetica, sans-serif;
+  color: #767676;
+  font: 12px Arial, Helvetica, sans-serif;
 }
 .comment .likes {
-  font: bold 1rem Arial, Helvetica, sans-serif;
+  font: bold 12px Arial, Helvetica, sans-serif;
+}
+
+.comment-text {
+  font-size: 14px;
+  line-height: 21px;
 }
 
 @media only screen and (min-width: 1000px) {
