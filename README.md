@@ -6,7 +6,7 @@ Telegraph front end exercise
 
 ### :mega: Styling
 
-I have only used CSS - I would have usually opted to use sass as my css preprocessor. In hindsight, i ma have gone for using grid layout rather than flexbox.
+I have only used CSS - I would have usually opted to use sass as my css preprocessor.
 
 ### :mega: Show single post
 Given that I submit the path of the article into the browser
