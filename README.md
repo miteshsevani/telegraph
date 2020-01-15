@@ -23,9 +23,9 @@ Given that I submit the path of the article into the browser
 Given that I access the single post page
 * Then the post page should return associated posts by category - :white_check_mark:
 * And each item should show the title of the article - :white_check_mark:
-* And each item should show the date of the article - Does not have date in posts.json
+* And each item should show the date of the article - :interrobang: Does not have date in posts.json
 * And each item should show the thumbnail of the article - :white_check_mark:
-* And each item should show the premium label if premium - No premium articles included
+* And each item should show the premium label if premium - :interrobang: No premium articles included
 
 
 ### :mega: Show comments (Call made on client side and injected with js)
