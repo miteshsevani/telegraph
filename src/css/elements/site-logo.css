@@ -1,5 +1,19 @@
 .site-logo {
 	height: 48px;
-	padding: 1rem;
-	width: 285px;
+	width: 200px;
+	max-width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.site-header {
+		max-width: 768px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.site-header {
+		max-width: 1440px;
+	}
 }

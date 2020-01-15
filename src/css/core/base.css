@@ -3,6 +3,7 @@ body {
   font: 16px 'Roboto', sans-serif;
   line-height: 24px;
   color: #333333;
+  padding: 8px;
 }
 
 p {
@@ -16,4 +17,11 @@ a {
 
 img {
   max-width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    padding: 12px 48px;
+  }
+
 }

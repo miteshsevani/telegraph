@@ -19,12 +19,12 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  header {
-    width: 65%;
+  .article-header {
+    width: 58%;
   }
-  header :not(.hero) {
-    margin-left: 100px;
-    margin-right: -100px;
+  .article-header :not(.hero) {
+    margin-left: 25%;
+    margin-right: -25%;
   }
   .headline {
     font-size: 35px;
