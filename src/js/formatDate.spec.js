@@ -6,8 +6,6 @@ test('Function should exist', () => {
 	expect(formatDate).toBeDefined()
 });
 
-
-
 describe('Test article date format', () => {
 	//Test the function output
 	test("should format date", () => {
