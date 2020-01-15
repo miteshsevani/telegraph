@@ -3,6 +3,6 @@ const express = require('express');
 const router = express.Router();
 
 //router.get('/einstein-and-churchill-both-took-daily-naps', article.index);
-router.get('/', article.index);
+router.get('/einstein-and-churchill-both-took-daily-naps', article.index);
 
 module.exports = router;
