@@ -1,7 +1,7 @@
 # telegraph
 Telegraph front end exercise
 
-Time Taken: Approximately 4 hours
+:clock1: Time Taken: Approximately 4 hours
 
 
 ### :mega: Styling
