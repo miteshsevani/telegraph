@@ -1,13 +1,14 @@
 # telegraph
 Telegraph front end exercise
 
-:clock1: Time Taken: Approximately 4 hours
+:clock1: Time Taken: Approximately 4 - 5 hours
 
 To view the page, go to http://localhost:3000/einstein-and-churchill-both-took-daily-naps
 
 ### :mega: Styling
 
-I have only used CSS - I would have usually opted to use sass as my css preprocessor.
+* I have only used CSS - I would have usually opted to use sass as my css preprocessor
+* I have used css grid for layout to ensure responsiveness
 
 ### :mega: Show single post
 Given that I submit the path of the article into the browser
@@ -47,3 +48,7 @@ Given that I click the Newest button in the comments area
 Given that I click the Likes button in the comments area
 * Then then the comments should display in order of most likes - :white_check_mark:
 * And the comments should show most liked first - :white_check_mark:
+
+### :mega: Unit testing
+* I have done unit tetsing on the format date function
+* There are a few more I could do time permitting

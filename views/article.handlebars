@@ -5,7 +5,7 @@
     <div class="publish-date">{{{ postDate }}}</div>
   </header>
   <div class="article-hero">
-    <img src='{{{ article.post.image }}}' alt="">
+    <img src='{{{ article.post.image }}}' alt="{{{ article.post.title }}}">
   </div>
   <div class="article-wrapper">
     <article>
@@ -29,7 +29,7 @@
     <div class="associated-articles">
       {{#each posts}}
       <div class="story">
-        <img src="{{ thumbnail }}">
+        <img src="{{ thumbnail }}" alt="{{ title }}">
         <div class="content">
           <h4 class="title">{{ title }}</h4>
           <a href="#" class="title">Read more</a>

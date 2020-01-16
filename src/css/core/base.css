@@ -31,14 +31,12 @@ img {
   grid-gap: 1em;
 }
 
-
 @media only screen and (min-width: 768px) {
   .content-wrapper {
     max-width: 768px;
     margin: 0 auto;
   }
 }
-
 
 @media only screen and (min-width: 1000px) {
   body {

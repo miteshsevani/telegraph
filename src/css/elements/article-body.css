@@ -8,6 +8,7 @@
   .article-wrapper {
     grid-column: 3/9;
   }
+
   article {
     grid-column: 3/9;
     margin-bottom: 32px;
