@@ -12,7 +12,7 @@ const getComments = async () => {
 }
 
 getComments().then(data => {
-  const commentsEl = document.querySelector('.comments');
+  const commentsEl = document.querySelector('.comments-body');
   let commentsHTML = []; // Set empty array for html body
 
   // Display total number of comments
@@ -50,11 +50,12 @@ sortTypes.forEach(sortType => {
 
 // Sort comemnts used as the callback function from click event
 function sortComments() {
-  getComments().then(data => {
-    const sortBy = this.className; // Get sort by type
-    const commentsEl = document.querySelector('.comments');
-    let commentsHTML = []; // Set empty array for html body
 
+  const sortBy = this.className; // Get sort by type
+  const commentsEl = document.querySelector('.comments-body');
+  let commentsHTML = []; // Set empty array for html body
+
+  getComments().then(data => {
     // Sort according to selected choice
     data.sort((a,b) => {
       if(sortBy.includes('likes')) {

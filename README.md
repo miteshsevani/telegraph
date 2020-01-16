@@ -3,6 +3,7 @@ Telegraph front end exercise
 
 :clock1: Time Taken: Approximately 4 hours
 
+To view the page, go to http://localhost:3000/einstein-and-churchill-both-took-daily-naps
 
 ### :mega: Styling
 

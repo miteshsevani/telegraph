@@ -23,13 +23,16 @@
 }
 
 .comments-header .sort {
-  font-size: 14px;
+  font: 14px 'Roboto', sans-serif;
 }
 
 .comments-header .sort [class^="sort-"] {
   cursor: pointer;
 }
 
+.comments-body {
+  font: 12px 'Roboto', sans-serif;
+}
 .comment {
   padding: 16px 0;
   border-bottom: 1px solid #dddddd;
@@ -47,15 +50,15 @@
 }
 
 .comment .user {
-  font-weight: bold;
+  font: bold 16px 'Ibarra Real Nova', serif;
 }
 
 .comment .date {
   color: #767676;
-  font: 12px Arial, Helvetica, sans-serif;
+
 }
 .comment .likes {
-  font: bold 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .comment-text {

@@ -3,6 +3,7 @@ const meta = require('../model/MetaModel');
 const article = require('../model/ArticleModel');
 const posts = require('../model/PostsModel');
 const formatDate = require('../../src/js/formatDate')
+
 exports.index = function(req, res) {
 
   // Format Date

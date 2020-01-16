@@ -1,6 +1,6 @@
 body {
   -webkit-font-smoothing: antialiased;
-  font: 16px 'Roboto', sans-serif;
+  font: 16px 'Ibarra Real Nova', serif;
   line-height: 24px;
   color: #333333;
   padding: 8px;
@@ -21,6 +21,7 @@ img {
 
 @media only screen and (min-width: 1000px) {
   body {
+    font-size: 18px;
     padding: 12px 48px;
   }
 
