@@ -10,6 +10,10 @@ p {
   margin: 16px 0;
 }
 
+p:first-child {
+  margin-top: 0;
+}
+
 a {
   color: #d10a11;
   text-decoration: none;
@@ -19,10 +23,30 @@ img {
   max-width: 100%;
 }
 
+/* Set 12 column grid */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-auto-columns: min-content;
+  grid-gap: 1em;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .content-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+
 @media only screen and (min-width: 1000px) {
   body {
     font-size: 18px;
     padding: 12px 48px;
   }
 
+  .content-wrapper {
+    max-width: 1440px;
+  }
 }

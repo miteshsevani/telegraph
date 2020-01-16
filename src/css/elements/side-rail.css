@@ -1,4 +1,8 @@
 
+.side-rail {
+  grid-column: 1/13;
+}
+
 .side-rail h3 {
   padding-bottom: 8px;
   margin-bottom: 8px;
@@ -46,6 +50,7 @@
 
 @media only screen and (min-width: 1000px) {
   .side-rail {
-    width: 25%;
+    grid-column: 10/13;
+    grid-row-start: 2;
   }
 }

@@ -4,8 +4,10 @@
     <div class="stand-first">{{{ article.post.standfirst }}}</div>
     <div class="publish-date">{{{ postDate }}}</div>
   </header>
+  <div class="article-hero">
+    <img src='{{{ article.post.image }}}' alt="">
+  </div>
   <div class="article-wrapper">
-    <img class="hero" src='{{{ article.post.image }}}'>
     <article>
       {{{ article.post.body }}}
     </article>
@@ -27,11 +29,11 @@
     <div class="associated-articles">
       {{#each posts}}
       <div class="story">
-          <img src="{{ thumbnail }}">
-          <div class="content">
-            <h4 class="title">{{ title }}</h4>
-            <a href="#" class="title">Read more</a>
-          </div>
+        <img src="{{ thumbnail }}">
+        <div class="content">
+          <h4 class="title">{{ title }}</h4>
+          <a href="#" class="title">Read more</a>
+        </div>
       </div>
       {{/each}}
     </div>

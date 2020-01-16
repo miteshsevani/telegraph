@@ -1,32 +1,15 @@
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .article-wrapper {
   margin-bottom: 16px;
-}
-
-@media only screen and (min-width: 768px) {
-  .content-wrapper {
-    max-width: 768px;
-    margin: 0 auto;
-  }
+  grid-column: 1/13;
 }
 
 @media only screen and (min-width: 1000px) {
-  .content-wrapper {
-    flex-direction: row;
-    max-width: 1440px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
   .article-wrapper {
-    width: 65%;
+    grid-column: 3/9;
   }
   article {
+    grid-column: 3/9;
     margin-bottom: 32px;
-    margin-left: 25%;
   }
 }

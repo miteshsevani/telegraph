@@ -1,3 +1,12 @@
+.article-header {
+  grid-column: 1/13;
+}
+
+.article-hero {
+  grid-column: 1/13;
+  grid-row-start: 1;
+}
+
 .headline {
   margin-bottom: 16px;
   font-size: 19px;
@@ -15,17 +24,19 @@
   font: 12px 'Roboto', sans-serif;
   line-height: 15px;
   color: #767676;
-  margin-bottom: 16px;
 }
 
 @media only screen and (min-width: 1000px) {
+
   .article-header {
-    width: 58%;
+    grid-column: 3/10;
   }
-  .article-header :not(.hero) {
-    margin-left: 25%;
-    margin-right: -25%;
+
+  .article-hero {
+    grid-column: 1/9;
+    grid-row-start: 2;
   }
+
   .headline {
     font-size: 35px;
     line-height: 41px;
@@ -34,5 +45,9 @@
   .stand-first {
     font-size: 22px;
     line-height: 26px;
+  }
+
+  .publish-date {
+    margin-bottom: 16px;
   }
 }
