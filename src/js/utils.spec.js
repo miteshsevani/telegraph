@@ -1,7 +1,7 @@
 const Utils = require("./utils");
 
-describe( 'Utils', () => {
-	describe( 'isHomePage', () => {
+describe('Utils', () => {
+	describe('isHomePage', () => {
 		it("should match if on homepage", () => {
 			const utils = new Utils();
 			window.history.pushState({}, "", "/");

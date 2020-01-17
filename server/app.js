@@ -1,5 +1,5 @@
 const express = require('express');
-const exphbs  = require('express-handlebars');
+const exphbs = require('express-handlebars');
 const router = require('./router');
 const app = express();
 const port = 3000;

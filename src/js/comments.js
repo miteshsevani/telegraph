@@ -6,7 +6,7 @@ const getComments = async () => {
     const response = await fetch('https://my-json-server.typicode.com/telegraph/frontend-exercise/comments');
     const data = await response.json();
     return data;
-  } catch(err) {
+  } catch (err) {
     console.log(err);
   }
 }
@@ -57,11 +57,11 @@ function sortComments() {
 
   getComments().then(data => {
     // Sort according to selected choice
-    data.sort((a,b) => {
-      if(sortBy.includes('likes')) {
+    data.sort((a, b) => {
+      if (sortBy.includes('likes')) {
         return (a.likes > b.likes) ? -1 : 1;
       }
-      if(sortBy.includes('newest')) {
+      if (sortBy.includes('newest')) {
         return new Date(b.date) - new Date(a.date);
       }
     });
