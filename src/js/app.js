@@ -1,4 +1,7 @@
 const Utils = require('./utils');
-require('./comments');
+const comments = require('./comments');
+
+//Get and diplay comments
+comments();
 
 new Utils();
