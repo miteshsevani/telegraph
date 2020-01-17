@@ -12,12 +12,28 @@ const getComments = async () => {
 }
 
 getComments().then(data => {
-  const commentsEl = document.querySelector('.comments-body');
-  let commentsHTML = []; // Set empty array for html body
-
   // Display total number of comments
   const commentsLength = data.length; // Set comments length
   document.querySelector('.comments-length').innerHTML = commentsLength;
+
+  // Diaplay comments
+  displayComments(data);
+}).catch(err => {
+  console.log(err)
+});
+
+// Sort by likes and newsest date
+const sortTypes = document.querySelectorAll('.sort-likes, .sort-newest');
+
+// Add event listner to both sort types
+sortTypes.forEach(sortType => {
+  sortType.addEventListener('click', sortComments)
+});
+
+// Display comments
+function displayComments(data) {
+  const commentsEl = document.querySelector('.comments-body');
+  let commentsHTML = []; // Set empty array for html body
 
   // Loop through comments and build comments html array
   data.map(comment => {
@@ -34,26 +50,14 @@ getComments().then(data => {
       </div>
     `)
   });
-  commentsEl.innerHTML = commentsHTML.join(''); // Join (with empty string) is to remove the "," between each array item
-}).catch(err => {
-  console.log(err)
-});
 
-
-// Sort by likes and newsest date
-const sortTypes = document.querySelectorAll('.sort-likes, .sort-newest');
-
-// Add event listner to both sort types
-sortTypes.forEach(sortType => {
-  sortType.addEventListener('click', sortComments)
-});
+  // Join (with empty string) is to remove the "," between each array item
+  commentsEl.innerHTML = commentsHTML.join('');
+}
 
 // Sort comemnts used as the callback function from click event
 function sortComments() {
-
   const sortBy = this.className; // Get sort by type
-  const commentsEl = document.querySelector('.comments-body');
-  let commentsHTML = []; // Set empty array for html body
 
   getComments().then(data => {
     // Sort according to selected choice
@@ -65,24 +69,9 @@ function sortComments() {
         return new Date(b.date) - new Date(a.date);
       }
     });
-
-    // Loop through comments and build comments html array
-    data.map(comment => {
-      commentsHTML.push(`
-        <div class="comment">
-          <div class="meta">
-            <span class="user">${comment.name}</span>
-            <span class="date">${formatDate(comment.date, 'comments')}</span>
-            <span class="likes">${comment.likes} Likes</span>
-          </div>
-          <div class="comment-text">
-            ${comment.body}
-          </div>
-        </div>
-      `);
-    });
-    commentsEl.innerHTML = commentsHTML.join(''); // Join (with empty string) is to remove the "," between each array item
+    // Diaplay comments
+    displayComments(data);
+  }).catch(err => {
+    console.log(err)
   });
 }
-
-module.exports = getComments;
