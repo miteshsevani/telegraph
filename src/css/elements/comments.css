@@ -19,11 +19,11 @@
 
 .comments-header .title {
   font-size: 19px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .comments-header .sort {
-  font: 14px 'Roboto', sans-serif;
+  font: 500 14px 'Roboto', sans-serif;
 }
 
 .comments-header .sort [class^="sort-"] {
@@ -50,7 +50,7 @@
 }
 
 .comment .user {
-  font: bold 16px 'Ibarra Real Nova', serif;
+  font: 700 16px 'Ibarra Real Nova', serif;
 }
 
 .comment .date {
@@ -58,7 +58,7 @@
 
 }
 .comment .likes {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .comment-text {
